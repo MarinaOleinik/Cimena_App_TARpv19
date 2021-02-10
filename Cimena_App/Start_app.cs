@@ -16,6 +16,9 @@ namespace Cimena_App
         ListBox saalide_list;
         public Start_app()
         {
+            this.Text = "SuperKino";
+            this.BackgroundImage = Image.FromFile(@"..\..\tere.png");
+            this.Size = new Size(360, 300);
             saalide_list = new ListBox();
             saalide_list.Location = new Point(10, 10);
             saalide_list.Font= new Font(DefaultFont.FontFamily, 14);
