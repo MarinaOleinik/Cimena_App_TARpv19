@@ -14,9 +14,21 @@ namespace Cimena_App
         [STAThread]
         static void Main()
         {
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Start_app());
+
+
+            //using (var ctx = new CimenaDBContext())
+            //{
+            //    var film = new Film() { Filmi_nimetus = "New film" };
+
+            //    ctx.Films.Add(film);
+            //    ctx.SaveChanges();
+            //}
+
+
         }
     }
 }

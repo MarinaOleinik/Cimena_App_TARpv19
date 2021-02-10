@@ -23,10 +23,12 @@ namespace Cimena_App
             saalide_list.Items.Add("Keskmine");
             saalide_list.Items.Add("Suur");
             this.Controls.Add(saalide_list);
+            saalide_list.SelectedIndexChanged += Saalide_list_SelectedIndexChanged;
         }
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+
+        private void Saalide_list_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (saalide_list.SelectedIndex==1)
+            if (saalide_list.SelectedIndex == 1)
             {
                 i = 5; j = 5;
             }
@@ -45,5 +47,7 @@ namespace Cimena_App
             Saalid saalid = new Saalid(i, j);
             saalid.Show();
         }
+
+        
     }
 }
