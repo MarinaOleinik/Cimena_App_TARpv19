@@ -18,6 +18,8 @@ namespace Cimena_App
         {
             saalide_list = new ListBox();
             saalide_list.Location = new Point(10, 10);
+            saalide_list.Font= new Font(DefaultFont.FontFamily, 14);
+            saalide_list.Size = new Size(150, 30);
             saalide_list.Items.Add("Vali saal");
             saalide_list.Items.Add("Väike");
             saalide_list.Items.Add("Keskmine");

@@ -43,10 +43,10 @@ namespace Cimena_App
             for (int i = 0; i < piletide_tüübid.Length; i++)
             {
                 piletide_tüübid [i]= new CheckBox() { Text=pil_tübid[i]};
-                piletide_tüübid[i].Size = new Size(100, 20);
-                
+                piletide_tüübid[i].Size = new Size(150, 40);
+                piletide_tüübid[i].Font = new Font(DefaultFont.FontFamily, 14);
                 piletide_tüübid[i].Location = new Point(x , y);
-                x = x + 100;
+                x = x + 150;
                 this.Controls.Add(piletide_tüübid[i]);
             }
             foreach (var item in piletide_tüübid)
