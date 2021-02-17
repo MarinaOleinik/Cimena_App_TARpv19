@@ -19,8 +19,8 @@ namespace Cimena_App
         SqlDataAdapter Saalide_adapter;
         public int i=0, j=0;
         ListBox saalide_list;
-        int[] read_list;
-        int[] kohad_list;
+        int[] read_list;//reade list
+        int[] kohad_list;//kohade list
         public Start_app()
         {   this.Text = "SuperKino";
             this.BackgroundImage = Image.FromFile(@"..\..\tere.png");
